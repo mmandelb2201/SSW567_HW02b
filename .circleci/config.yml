@@ -23,7 +23,6 @@ jobs:
           path: ~/GitHubApi567-hw4a
       - run:
           command: |
-            cd /GitHubApi567-hw4a
             pip install pytest
             pip install requests
             pytest --junitxml=test-results/junit.xml TestApi.py
