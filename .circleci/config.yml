@@ -18,7 +18,7 @@ jobs:
   github-api:
     docker:
       - image: cimg/python:3.10.7
-    working_diretory: ~/GitHubApi567-hw4a
+    working_directory: ~/GitHubApi567-hw4a
     steps:
       - checkout
       - run:
