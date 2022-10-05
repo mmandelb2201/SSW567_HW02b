@@ -20,7 +20,7 @@ jobs:
       - image: cimg/python:3.10.7
     steps:
       - checkout:
-        path: ~/GitHubApi567-hw4a
+          path: ~/GitHubApi567-hw4a
       - run:
           command: |
             pip install pytest
