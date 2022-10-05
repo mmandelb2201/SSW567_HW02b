@@ -25,7 +25,6 @@ jobs:
           command: |
             pip install pytest
             pip install requests
-            pip install json
             ls
             cd GitHubApi567-hw4a
             ls
