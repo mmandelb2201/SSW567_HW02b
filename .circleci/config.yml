@@ -21,7 +21,7 @@ jobs:
     working_directory: ~/GitHubApi567-hw4a
     steps:
       - checkout:
-        path: ~/GitHubApi567-hw4a
+         - path: ~/GitHubApi567-hw4a
       - run:
           command: |
             pip install pytest
