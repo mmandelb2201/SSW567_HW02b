@@ -16,7 +16,7 @@ jobs:
       - store_test_results:
           path: test-results
   github-api:
-      docker:
+    docker:
       - image: cimg/python:3.10.7
     steps:
       - checkout:
