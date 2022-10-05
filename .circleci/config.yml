@@ -23,17 +23,12 @@ jobs:
       - run:
           command: |
             pip install pytest
-            pip install requests
             pytest --junitxml=test-results/junit.xml TestApi.py
-          working_directory: ~/GitHubApi567-hw4a
       - store_test_results:
           path: test-results
 
 
 workflows:
-  testing_triangles:
-    jobs:
-      - build-and-test
   testing_api:
     jobs:
       - github-api
