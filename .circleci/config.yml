@@ -18,14 +18,13 @@ jobs:
   github-api:
     docker:
       - image: cimg/python:3.10.7
-    working_directory: ~/GitHubApi567-hw4a
     steps:
       - checkout
       - run:
           command: |
             pip install pytest
             pip install requests
-            pytest --junitxml=test-results/junit.xml TestApi.py
+            pytest --prefix ./GitHubApi567-hw4a --junitxml=test-results/junit.xml TestApi.py
       - store_test_results:
           path: test-results
 
