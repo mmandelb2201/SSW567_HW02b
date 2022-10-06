@@ -1,6 +1,4 @@
 import unittest
-
-from numpy import empty
 from Api import getRepoCommits
 
 class TestApi(unittest.TestCase):
