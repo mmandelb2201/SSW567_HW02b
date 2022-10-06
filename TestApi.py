@@ -1,4 +1,7 @@
+from asyncio.windows_events import NULL
 import unittest
+
+from numpy import empty
 from Api import getRepoCommits
 
 class TestApi(unittest.TestCase):
@@ -7,7 +10,7 @@ class TestApi(unittest.TestCase):
 
     def testDataHasRepositortNames(self):
         dict = getRepoCommits("mmandelb2201")
-        self.assertEqual(dict.has_key("NodeJSLab"), True, "repository 'NodeJSLab' should be in dictionary")
+        self.assertNotEqual(dict["NodeJsLab"], None, "repository 'NodeJSLab' should be in dictionary")
 
     def testCommitCountCorrect(self):
         dict = getRepoCommits("mmandelb2201")
