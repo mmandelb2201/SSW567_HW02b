@@ -7,7 +7,7 @@ class TestApi(unittest.TestCase):
 
     def testDataHasRepositortNames(self):
         dict = getRepoCommits("mmandelb2201")
-        self.assertNotEqual(dict["NodeJsLab"], None, "repository 'NodeJSLab' should be in dictionary")
+        self.assertNotEqual(dict["NodeJSLab"], None, "repository 'NodeJSLab' should be in dictionary")
 
     def testCommitCountCorrect(self):
         dict = getRepoCommits("mmandelb2201")
